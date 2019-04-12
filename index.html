@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl-PL">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="common.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="index.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="overlay.css">
 </head>
 <body>
 	<nav>
@@ -15,28 +16,28 @@
 	</nav>
 	<div id="content">
 		<main>
-			<section>
-				<h1>Najlepsze wyniki</h1>
-				<div>
-					<div>name</div>
-					<div>score</div>
+			<section id="bestScores">
+				<h1>NAJLEPSZE WYNIKI</h1>
+				<div class="player">
+					<div class="name">Han Solo</div>
+					<div class="number">3965</div>
 				</div>
-				<div>
-					<div>name</div>
-					<div>score</div>
+				<div class="player">
+					<div class="name">Boba Fett</div>
+					<div class="number">1231</div>
 				</div>
-				<div>
-					<div>name</div>
-					<div>score</div>
+				<div class="player">
+					<div class="name">Luke Skywalker</div>
+					<div class="number">502</div>
 				</div>
-				<div>
-					<div>name</div>
-					<div>score</div>
+				<div class="player">
+					<div class="name">Master Yoda</div>
+					<div class="number">324</div>
 				</div>
 			</section>
-			<section>
-				<a href="game.html">Graj</a>
-			</section>
+			<div id="playGame">
+				<a href="game.html">GRAJ</a>
+			</div>
 		</main>
 	</div>
 
@@ -46,9 +47,18 @@
 	</footer>
 
 	<a id="login" href="#" class="overlay"></a>
-	<div class="overlay">
-		<h3>My popup heading</h3>
-		<p>Popup content</p>
+	<div id="login-div" class="overlay">
+		<section>
+			<h1>LOGIN</h1>
+			<form id="login-form" action="game.html" method="get">
+				<div>
+					<input type="text" name="name" placeholder="Nick" required>
+				</div>
+				<div>
+					<input type="submit" value="Zaloguj!">
+				</div>
+			</form>
+		</section>
 		<a class="close x" href="#">x</a>
 		<a class="close word" href="#">Close</a>
 	</div> 

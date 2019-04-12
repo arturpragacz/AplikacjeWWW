@@ -1,65 +1,39 @@
 
 main {
+	padding: 60px 0px;
 	text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-a.overlay:target {
-	display: block;
+.player {
+	display: flex;
+	justify-content: space-between;
+	width: 400px;
+	margin: 0px auto;
 }
 
-a.overlay:target + div.overlay {
-	display: block;
+@media only screen and (max-width: 420px) {
+	.player {
+		width: calc(100% - 20px);
+	}
 }
 
-a.overlay {
-	display		: none;
-	position	: fixed;
-	top		: 0;
-	left		: 0;
-	z-index		: 4;
-	width		: 100%;
-	height		: 100%;
-	background	: rgba(0, 0, 0, 0.8);
-	cursor		: default;
+.player .number {
+	color: #b77f7f;
 }
 
-div.overlay {
-	display 	: none;
-	width		: 640px;
-	height		: 480px;
-	position	: fixed;
-	top		: 50%;
-	left		: 50%;
-	margin-left	: -320px; /* = -width / 2 */
-	margin-top	: -240px; /* = -height / 2 */
-	z-index		: 5;
-	box-sizing	: border-box;
+#playGame {
+	margin-top: 50px;
+	font-size: 30px;
 }
 
-div.popup > a.close {
-	color		: white;
-	position	: absolute;
-	font-weight	: bold;
-	right		: 10px;
+#playGame, #bestScores > h1, #login-div h1 {
+	font-family: Anurati;
 }
 
-div.popup > a.close.word {
-	top		: 100%;
-	margin-top	: 5px;
+#login-div > section {
+	text-align: center;
 }
 
-div.popup > a.close.x {
-	bottom		: 100%;
-	margin-bottom	: 5px;
+#login-form div:first-child {
+	margin: 0px auto 15px;
 }
