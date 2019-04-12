@@ -1,0 +1,88 @@
+
+main {
+	padding: 60px 0px;
+	display: grid;
+  grid-template: repear(3, 1fr), repear(2, 1fr);
+	grid-gap: 10px;
+	place-items: center;
+}
+
+#planets {
+	grid-column: 1 / 2;
+	grid-row: 1 / 4;
+}
+
+#timeLeft {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+}
+
+#credits {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+
+#starships {
+	grid-column: 2 / 3;
+	grid-row: 3 / 4;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+
+
+
+
+
+a.overlay:target {
+	display: block;
+}
+
+a.overlay:target + div.overlay {
+	display: block;
+}
+
+a.overlay {
+	display		: none;
+	position	: fixed;
+	top		: 0;
+	left		: 0;
+	z-index		: 4;
+	width		: 100%;
+	height		: 100%;
+	background	: rgba(0, 0, 0, 0.8);
+	cursor		: default;
+}
+
+div.overlay {
+	display 	: none;
+	width		: 640px;
+	height		: 480px;
+	position	: fixed;
+	top		: 50%;
+	left		: 50%;
+	margin-left	: -320px; /* = -width / 2 */
+	margin-top	: -240px; /* = -height / 2 */
+	z-index		: 5;
+	box-sizing	: border-box;
+}
+
+div.popup > a.close {
+	color		: white;
+	position	: absolute;
+	font-weight	: bold;
+	right		: 10px;
+}
+
+div.popup > a.close.word {
+	top		: 100%;
+	margin-top	: 5px;
+}
+
+div.popup > a.close.x {
+	bottom		: 100%;
+	margin-bottom	: 5px;
+}

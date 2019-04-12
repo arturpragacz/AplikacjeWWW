@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Anurati";
+  src: url("Anurati-Regular.woff") format("woff")
+}
+
+body {
+	background: url("cosmos.jpg") no-repeat center center fixed;
+	background-size: cover;
+	color: white;
+}
+
+nav, footer {
+  position: fixed;
+  left: 0;
+	width: 100%;
+	padding: 10px 0px;
+	display:flex;
+	justify-content: space-around;
+}
+
+nav {
+  top: 0;
+}
+
+footer {
+  bottom: 0;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+#content {
+	margin: 25px 0px;
+  font-family: Anurati;
+}
+
+.panel {
+	background	: rgba(0, 0, 0, 0.4);
+	border: 2px solid white;
+}
