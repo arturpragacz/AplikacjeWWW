@@ -10,257 +10,265 @@
 	<link rel="stylesheet" type="text/css" media="screen" href="overlay.css">
 </head>
 <body>
-	<nav class="logged">
-		<a href="index.html">Strona główna</a>
-		<div>Zalogowany jako: Gracz153</div>
-		<a href="index.html">Wyloguj</a>
-	</nav>
+	<div id="wrapper">
+		<header class="logged">
+			<a href="index.html" id="head-mainPage" class="head-button">Strona główna</a>
+			<div id="head-loggedName" class="head-button">Zalogowany jako: Gracz153</div>
+			<a href="index.html" id="head-logout" class="head-button">Wyloguj</a>
+		</header>
+	
+		<div id="content">
+			<main>
+				<div id="timeLeft" class="panel"><span>POZOSTALY CZAS: </span><span class="number">300</span></div>
+				<div id="credits" class="panel"><span>STAN KONTA: </span><span class="number">1984</span></div>
+			
+				<section id="planets" class="panel">
+					<h1>PLANETY</h1>
+					<ul>
+						<li><a href="#planetScreen">Alderaan</a> <span class="cords">(15, 32)</span></li>
+						<li><a href="#planetScreen">Argoland</a> <span class="cords">(59, 44)</span></li>
+						<li><a href="#planetScreen">Arrakis</a> <span class="cords">(81, 34)</span></li>
+						<li><a href="#planetScreen">Corellia</a> <span class="cords">(43, 69)</span></li>
+						<li><a href="#planetScreen">Encja</a> <span class="cords">(91, 32)</span></li>
+						<li><a href="#planetScreen">Gaia</a> <span class="cords">(75, 76)</span></li>
+						<li><a href="#planetScreen">Ksi</a> <span class="cords">(91, 71)</span></li>
+						<li><a href="#planetScreen">Leonida</a> <span class="cords">(32, 5)</span></li>
+						<li><a href="#planetScreen">NowWhat</a> <span class="cords">(35, 41)</span></li>
+						<li><a href="#planetScreen">Sur'Kesh</a> <span class="cords">(39, 31)</span></li>
+						<li><a href="#planetScreen">Tairia</a> <span class="cords">(36, 84)</span></li>
+						<li><a href="#planetScreen">Tatooine</a> <span class="cords">(47, 68)</span></li>
+						<li><a href="#planetScreen">Tuchanka</a> <span class="cords">(27, 76)</span></li>
+						<li><a href="#planetScreen">Ziemia</a> <span class="cords">(94, 24)</span></li>
+					</ul>
+				</section>
+			
+				<section id="starships" class="panel">
+					<h1>STATKI</h1>
+					<ul>
+						<li>
+							<a href="#starshipScreen">Axiom</a>
+							<span class="place">
+								(<a href="#planetScreen">Tatooine</a>)
+							</span>
+						</li>
+						<li>
+							<a href="#starshipScreen">Enterprise</a>
+							<span class="place">
+								(<a href="#planetScreen">Corellia</a>)
+							</span>
+						</li>
+						<li>
+							<a href="#starshipScreen">Goliath</a>
+							<span class="place">
+								(<a href="#planetScreen">Sur'Kesh</a>)
+							</span>
+						</li>
+						<li>
+							<a href="#starshipScreen">Hermes</a>
+							<span class="place">
+								(<a href="#planetScreen">NowWhat</a>)
+							</span>
+						</li>
+						<li>
+							<a href="#starshipScreen">Millenium Falcon</a>
+							<span class="place">
+								(<a href="#planetScreen">Tatooine</a>)
+							</span>
+						</li>
+						<li>
+							<a href="#starshipScreen">Niezwyci&#x0119;&#x017c;ony</a>
+							<span class="place">
+								(<a href="#planetScreen">Argoland</a>)
+							</span>
+						</li>
+						<li>
+							<a href="#starshipScreen">Normandy SR-2</a>
+							<span class="place">
+								(<a href="#planetScreen">Gaia</a>)
+							</span>
+						</li>
+						<li>
+							<a href="#starshipScreen">Nostromo</a>
+							<span class="place">
+								(<a href="#planetScreen">Arrakis</a>)
+							</span>
+						</li>
+						<li>
+							<a href="#starshipScreenVoyage">Rocinante</a>
+							<span class="place">
+								(<a href="#planetScreen">Alderaan</a>)
+								<span class="travel loc">-&gt; <a href="#planetScreen">Arrakis</a></span>
+								<span class="travel time">[<span class="travel time num">14</span>]</span>
+							</span>
+						</li>
+						<li>
+							<a href="#starshipScreen">&#x041a;&#x043e;&#x0441;&#x043c;&#x043e;&#x043d;&#x0430;&#x0432;&#x0442; &#x0410;&#x043b;&#x0435;&#x043a;&#x0441;&#x0435;&#x0301;&#x0439; &#x041b;&#x0435;&#x043e;&#x0301;&#x043d;&#x043e;&#x0432;</a>
+							<span class="place">
+								(<a href="#planetScreen">Arrakis</a>)
+							</span>
+						</li>
+					</ul>
+				</section>
+			</main>
+		</div>
+	
+		<footer>
+			<span>Twórca: <a href="mailto:artur.pragacz@student.uw.edu.pl">ap351768</a></span>
+			<span>Fotografia: <a href="https://unsplash.com/@bubo">Lubo Minar</a></span>
+		</footer>
+	</div>
 
-	<div id="content">
-		<main>
-			<div id="timeLeft" class="panel"><span>POZOSTALY CZAS: </span><span class="number">300</span></div>
-			<div id="credits" class="panel"><span>STAN KONTA: </span><span class="number">1984</span></div>
-		
-			<section id="planets" class="panel">
-				<h1>PLANETY</h1>
+	<div id="planetScreen" class="overlay-wrapper">
+		<a href="#" class="overlay"></a>
+		<div id="planetScreen-div" class="overlay">
+			<section>
+				<h1>Corellia</h1>
+				<h2>Towary</h2>
 				<ul>
-					<li><a href="#planetScreen">Alderaan</a> <span class="cords">(15, 32)</span></li>
-					<li><a href="#planetScreen">Argoland</a> <span class="cords">(59, 44)</span></li>
-					<li><a href="#planetScreen">Arrakis</a> <span class="cords">(81, 34)</span></li>
-					<li><a href="#planetScreen">Corellia</a> <span class="cords">(43, 69)</span></li>
-					<li><a href="#planetScreen">Encja</a> <span class="cords">(91, 32)</span></li>
-					<li><a href="#planetScreen">Gaia</a> <span class="cords">(75, 76)</span></li>
-					<li><a href="#planetScreen">Ksi</a> <span class="cords">(91, 71)</span></li>
-					<li><a href="#planetScreen">Leonida</a> <span class="cords">(32, 5)</span></li>
-					<li><a href="#planetScreen">NowWhat</a> <span class="cords">(35, 41)</span></li>
-					<li><a href="#planetScreen">Sur'Kesh</a> <span class="cords">(39, 31)</span></li>
-					<li><a href="#planetScreen">Tairia</a> <span class="cords">(36, 84)</span></li>
-					<li><a href="#planetScreen">Tatooine</a> <span class="cords">(47, 68)</span></li>
-					<li><a href="#planetScreen">Tuchanka</a> <span class="cords">(27, 76)</span></li>
-					<li><a href="#planetScreen">Ziemia</a> <span class="cords">(94, 24)</span></li>
+					<li class="item">Dwimeryt
+						<div>
+							<span>Ilość: </span><span>38</span>
+							<span>Zakup: </span><span>8</span>
+							<span>Sprzedaż: </span><span>8</span>
+						</div>
+					</li>
+					<li class="item">Lyrium
+						<div>
+							<span>Ilość: </span><span>63</span>
+							<span>Zakup: </span><span>8</span>
+							<span>Sprzedaż: </span><span>7</span>
+						</div>
+					</li>
+					<li class="item">Murkwie
+						<div>
+							<span>Ilość: </span><span>6</span>
+							<span>Zakup: </span><span>91</span>
+							<span>Sprzedaż: </span><span>84</span>
+						</div>
+					</li>
+					<li class="item">Protea&#x0144;skie dyski
+						<div>
+							<span>Ilość: </span><span>10</span>
+							<span>Zakup: </span><span>74</span>
+							<span>Sprzedaż: </span><span>66</span>
+						</div>
+					</li>
+					<li class="item">Unobtainium
+						<div>
+							<span>Ilość: </span><span>11</span>
+							<span>Zakup: </span><span>30</span>
+							<span>Sprzedaż: </span><span>26</span>
+						</div>
+					</li>
+					<li class="item">Ziemniaki
+						<div>
+							<span>Ilość: </span><span>12</span>
+							<span>Zakup: </span><span>71</span>
+							<span>Sprzedaż: </span><span>66</span>
+						</div>
+					</li>
+					<li class="item">Z&#x0142;oto
+						<div>
+							<span>Ilość: </span><span>19</span>
+							<span>Zakup: </span><span>37</span>
+							<span>Sprzedaż: </span><span>33</span>
+						</div>
+					</li>
+				</ul>
+				<h2>Statki</h2>
+				<ul>
+					<li class="ship"><a href="#starshipScreen">Enterprise</a></li>
 				</ul>
 			</section>
-		
-			<section id="starships" class="panel">
-				<h1>STATKI</h1>
+			<a class="close x" href="#">x</a>
+			<a class="close word" href="#">Close</a>
+		</div>
+	</div>
+
+	<div id="starshipScreen" class="overlay-wrapper">
+		<a href="#" class="overlay"></a>
+		<div id="starshipScreen-div" class="overlay">
+			<section>
+				<h1>Millenium Falcon</h1>
+				<h2><a href="#planetScreen">Tatooine</a></h2>
+				<h3>Ładunek</h3>
 				<ul>
-					<li>
-						<a href="#starshipScreen">Axiom</a>
-						<span class="place">
-							(<a href="#planetScreen">Tatooine</a>)
-						</span>
-					</li>
-					<li>
-						<a href="#starshipScreen">Enterprise</a>
-						<span class="place">
-							(<a href="#planetScreen">Corellia</a>)
-						</span>
-					</li>
-					<li>
-						<a href="#starshipScreen">Goliath</a>
-						<span class="place">
-							(<a href="#planetScreen">Sur'Kesh</a>)
-						</span>
-					</li>
-					<li>
-						<a href="#starshipScreen">Hermes</a>
-						<span class="place">
-							(<a href="#planetScreen">NowWhat</a>)
-						</span>
-					</li>
-					<li>
-						<a href="#starshipScreen">Millenium Falcon</a>
-						<span class="place">
-							(<a href="#planetScreen">Tatooine</a>)
-						</span>
-					</li>
-					<li>
-						<a href="#starshipScreen">Niezwyci&#x0119;&#x017c;ony</a>
-						<span class="place">
-							(<a href="#planetScreen">Argoland</a>)
-						</span>
-					</li>
-					<li>
-						<a href="#starshipScreen">Normandy SR-2</a>
-						<span class="place">
-							(<a href="#planetScreen">Gaia</a>)
-						</span>
-					</li>
-					<li>
-						<a href="#starshipScreen">Nostromo</a>
-						<span class="place">
-							(<a href="#planetScreen">Arrakis</a>)
-						</span>
-					</li>
-					<li>
-						<a href="#starshipScreenVoyage">Rocinante</a>
-						<span class="place">
-							(<a href="#planetScreen">Alderaan</a>)
-							<span class="travel loc">-&gt; <a href="#planetScreen">Arrakis</a></span>
-							<span class="travel time">[<span class="travel time num">14</span>]</span>
-						</span>
-					</li>
-					<li>
-						<a href="#starshipScreen">&#x041a;&#x043e;&#x0441;&#x043c;&#x043e;&#x043d;&#x0430;&#x0432;&#x0442; &#x0410;&#x043b;&#x0435;&#x043a;&#x0441;&#x0435;&#x0301;&#x0439; &#x041b;&#x0435;&#x043e;&#x0301;&#x043d;&#x043e;&#x0432;</a>
-						<span class="place">
-							(<a href="#planetScreen">Arrakis</a>)
-						</span>
-					</li>
+					<li>Cynamon: <span class="number">10</span></li>
+					<li>Protea&#x0144;skie dyski: <span class="number">3</span></li>
+					<li>Unobtainium: <span class="number">8</span></li>
+				</ul>
+				<h3>Transakcje</h3>
+				<form id="trade-form" action="game.html" method="get" class="form">
+					<div>
+						<select id="trade-item" name="tradeItem" required>
+							<option value="">--Proszę wybrać towar--</option>
+							<option value="Cynamon">Cynamon</option>
+							<option value="Dwimeryt">Dwimeryt</option>
+							<option value="Lyrium">Lyrium</option>
+							<option value="Murkwie">Murkwie</option>
+							<option value="Nuka-Cola">Nuka-Cola</option>
+							<option value="Protea\u0144skie dyski">Protea&#x0144;skie dyski</option>
+							<option value="Unobtainium">Unobtainium</option>
+							<option value="Woda">Woda</option>
+							<option value="Ziemniaki">Ziemniaki</option>
+							<option value="Z\u0142oto">Z&#x0142;oto</option>
+						</select>
+						</div>
+					<div><input type="number" id="trade-amount" name="tradeAmount" placeholder="Proszę wybrać ilość" required>
+					
+					</div>
+					<div>
+						<input type="submit" name="buy" value="Kup!">
+						<input type="submit" name="sell" value="Sprzedaj!">
+					</div>
+				</form>
+				<h3>Lot</h3>
+				<form id="fly-form" action="game.html" method="get" class="form">
+					<div>
+						<select id="fly-select" name="flyPlanet" required>
+							<option value="">--Proszę wybrać cel--</option>
+							<option value="Alderaan">Alderaan</option>
+							<option value="Argoland">Argoland</option>
+							<option value="Arrakis">Arrakis</option>
+							<option value="Corellia">Corellia</option>
+							<option value="Encja">Encja</option>
+							<option value="Ksi">Ksi</option>
+							<option value="Leonida">Leonida</option>
+							<option value="NowWhat">NowWhat</option>
+							<option value="Sur'Kesh">Sur'Kesh</option>
+							<option value="Tairia">Tairia</option>
+							<option value="Tuchanka">Tuchanka</option>
+							<option value="Ziemia">Ziemia</option>
+						</select>
+					</div>
+					<div>
+						<input type="submit" value="Leć!">
+					</div>
+				</form>
+			</section>
+			<a class="close x" href="#">x</a>
+			<a class="close word" href="#">Close</a>
+		</div>
+	</div>
+
+	<div id="starshipScreenVoyage" class="overlay-wrapper">
+		<a href="#" class="overlay"></a>
+		<div id="starshipScreenVoyage-div" class="overlay">
+			<section>
+				<h1>Rocinante</h1>
+				<h2><a href="#planetScreen">Alderaan</a>
+						<span class="travel loc">-&gt; <a href="#planetScreen">Arrakis</a></span>
+						<span class="travel time">[<span class="travel time num">14</span>]</span></h2>
+				<h3>Ładunek</h3>
+				<ul>
+					<li>Cynamon: <span class="number">10</span></li>
+					<li>Protea&#x0144;skie dyski: <span class="number">3</span></li>
+					<li>Unobtainium: <span class="number">8</span></li>
 				</ul>
 			</section>
-		</main>
-	</div>
-
-	<footer>
-		<span>Twórca: <a href="mailto:artur.pragacz@student.uw.edu.pl">ap351768</a></span>
-		<span>Fotografia: <a href="https://unsplash.com/@bubo">Lubo Minar</a></span>
-	</footer>
-
-	<a id="planetScreen" href="#" class="overlay"></a>
-	<div id="planetScreen-div" class="overlay">
-		<section>
-			<h1>Corellia</h1>
-			<h2>Towary</h2>
-			<ul>
-				<li class="item">Dwimeryt
-					<div>
-						<span>Ilość: </span><span>38</span>
-						<span>Zakup: </span><span>8</span>
-						<span>Sprzedaż: </span><span>8</span>
-					</div>
-				</li>
-				<li class="item">Lyrium
-					<div>
-						<span>Ilość: </span><span>63</span>
-						<span>Zakup: </span><span>8</span>
-						<span>Sprzedaż: </span><span>7</span>
-					</div>
-				</li>
-				<li class="item">Murkwie
-					<div>
-						<span>Ilość: </span><span>6</span>
-						<span>Zakup: </span><span>91</span>
-						<span>Sprzedaż: </span><span>84</span>
-					</div>
-				</li>
-				<li class="item">Protea&#x0144;skie dyski
-					<div>
-						<span>Ilość: </span><span>10</span>
-						<span>Zakup: </span><span>74</span>
-						<span>Sprzedaż: </span><span>66</span>
-					</div>
-				</li>
-				<li class="item">Unobtainium
-					<div>
-						<span>Ilość: </span><span>11</span>
-						<span>Zakup: </span><span>30</span>
-						<span>Sprzedaż: </span><span>26</span>
-					</div>
-				</li>
-				<li class="item">Ziemniaki
-					<div>
-						<span>Ilość: </span><span>12</span>
-						<span>Zakup: </span><span>71</span>
-						<span>Sprzedaż: </span><span>66</span>
-					</div>
-				</li>
-				<li class="item">Z&#x0142;oto
-					<div>
-						<span>Ilość: </span><span>19</span>
-						<span>Zakup: </span><span>37</span>
-						<span>Sprzedaż: </span><span>33</span>
-					</div>
-				</li>
-			</ul>
-			<h2>Statki</h2>
-			<ul>
-				<li class="ship"><a href="#starshipScreen">Enterprise</a></li>
-			</ul>
-		</section>
-		<a class="close x" href="#">x</a>
-		<a class="close word" href="#">Close</a>
-	</div>
-
-	<a id="starshipScreen" href="#" class="overlay"></a>
-	<div id="starshipScreen-div" class="overlay">
-		<section>
-			<h1>Millenium Falcon</h1>
-			<h2><a href="#planetScreen">Tatooine</a></h2>
-			<h3>Ładunek</h3>
-			<ul>
-				<li>Cynamon: <span class="number">10</span></li>
-				<li>Protea&#x0144;skie dyski: <span class="number">3</span></li>
-				<li>Unobtainium: <span class="number">8</span></li>
-			</ul>
-			<h3>Transakcje</h3>
-			<form id="trade-form" action="game.html" method="get" class="form">
-				<div>
-					<select id="trade-item" name="tradeItem" required>
-						<option value="">--Proszę wybrać towar--</option>
-						<option value="Cynamon">Cynamon</option>
-						<option value="Dwimeryt">Dwimeryt</option>
-						<option value="Lyrium">Lyrium</option>
-						<option value="Murkwie">Murkwie</option>
-						<option value="Nuka-Cola">Nuka-Cola</option>
-						<option value="Protea\u0144skie dyski">Protea&#x0144;skie dyski</option>
-						<option value="Unobtainium">Unobtainium</option>
-						<option value="Woda">Woda</option>
-						<option value="Ziemniaki">Ziemniaki</option>
-						<option value="Z\u0142oto">Z&#x0142;oto</option>
-					</select>
-					</div>
-				<div><input type="number" id="trade-amount" name="tradeAmount" placeholder="Proszę wybrać ilość" required>
-				
-				</div>
-				<div>
-					<input type="submit" name="buy" value="Kup!">
-					<input type="submit" name="sell" value="Sprzedaj!">
-				</div>
-			</form>
-			<h3>Lot</h3>
-			<form id="fly-form" action="game.html" method="get" class="form">
-				<div>
-					<select id="fly-select" name="flyPlanet" required>
-						<option value="">--Proszę wybrać cel--</option>
-						<option value="Alderaan">Alderaan</option>
-						<option value="Argoland">Argoland</option>
-						<option value="Arrakis">Arrakis</option>
-						<option value="Corellia">Corellia</option>
-						<option value="Encja">Encja</option>
-						<option value="Ksi">Ksi</option>
-						<option value="Leonida">Leonida</option>
-						<option value="NowWhat">NowWhat</option>
-						<option value="Sur'Kesh">Sur'Kesh</option>
-						<option value="Tairia">Tairia</option>
-						<option value="Tuchanka">Tuchanka</option>
-						<option value="Ziemia">Ziemia</option>
-					</select>
-				</div>
-				<div>
-					<input type="submit" value="Leć!">
-				</div>
-			</form>
-		</section>
-		<a class="close x" href="#">x</a>
-		<a class="close word" href="#">Close</a>
-	</div>
-
-	<a id="starshipScreenVoyage" href="#" class="overlay"></a>
-	<div id="starshipScreenVoyage-div" class="overlay">
-		<section>
-			<h1>Rocinante</h1>
-			<h2><a href="#planetScreen">Alderaan</a>
-					<span class="travel loc">-&gt; <a href="#planetScreen">Arrakis</a></span>
-					<span class="travel time">[<span class="travel time num">14</span>]</span></h2>
-			<h3>Ładunek</h3>
-			<ul>
-				<li>Cynamon: <span class="number">10</span></li>
-				<li>Protea&#x0144;skie dyski: <span class="number">3</span></li>
-				<li>Unobtainium: <span class="number">8</span></li>
-			</ul>
-		</section>
-		<a class="close x" href="#">x</a>
-		<a class="close word" href="#">Close</a>
+			<a class="close x" href="#">x</a>
+			<a class="close word" href="#">Close</a>
+		</div>
 	</div>
 </body>
 </html>

@@ -2,8 +2,7 @@
 main {
 	padding: 60px 0px;
 	display: grid;
-  grid-template: repeat(3, auto) / repeat(2, auto);
-	grid-gap: 10px;
+	gap: 10px;
 	place-items: center;
 }
 
@@ -31,6 +30,7 @@ main {
 	main {
 		display: flex;
 		flex-direction: column;
+		padding: 20px 0;
 	}
 	
 	#planets {
